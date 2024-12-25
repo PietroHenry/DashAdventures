@@ -28,7 +28,7 @@ if file_exists("save.sav"){
 }
 
 if room != rm_menu
-{timer_atual += 1 / room_speed}else{}
+{timer_atual += 1 / gamespeed_fps}else{}
 
 //if timer_atual > timer_record
 //{

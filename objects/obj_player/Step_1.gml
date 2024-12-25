@@ -32,7 +32,7 @@ if (_temp && !chao) {
 if timer_ultra_jump != 0
 {
 	timer_ultra_jump -= 1
-	if (chao && _jump && (chao || timer_pulo > 0 || coiote_timer > 0))
+	if (chao && place_meeting(x, y + 1, obj_wall) && (chao || timer_pulo > 0 || coiote_timer > 0))
 	{
 		velv = -max_velv - 64; // Faz o objeto saltar ao pressionar o espaço
 		audio_play_sound(snd_jump,0,false)
